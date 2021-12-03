@@ -1,15 +1,23 @@
 class homePageLinks {
-
    homepage() {
-      return cy.visit('https://www.cypress.io/')
-   }
-   howitworkspagelink() {
-      return cy.get('.styled__MenuWrapper-sc-16oj5lj-1 > .styled__NavList-sc-16oj5lj-3:nth-child(1) > .styled__NavItem-sc-16oj5lj-4:nth-child(2) > .Link-sc-5cc5in-0')
-   }
-   pricingpagelink() {
-      return cy.get('.styled__NavList-sc-16oj5lj-3:nth-child(1) > .styled__NavItem-sc-16oj5lj-4:nth-child(4) > .Link-sc-5cc5in-0')
+      return cy.visit('https://www.forbes.com/');
+   };
+
+   subscribe() {
+      return cy.get('body > div.main-content.main-content--universal-header > header > nav > div.header__right > div > a');
+   };
+
+   signIn() {
+      return cy.get('body > div.main-content.main-content--universal-header > header > nav > div.header__right > div > div > button');
    }
 
+   searchBtn() {
+      return cy.get('body > div.main-content.main-content--universal-header > header > nav > div.header__right > button');
+   }
+
+   searchInput() {
+      return cy.get('body > div.main-content.main-content--universal-header > div.search-modal > form > input');
+   }
 }
 
 export default homePageLinks

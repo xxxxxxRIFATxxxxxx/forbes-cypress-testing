@@ -1,5 +1,4 @@
 {
-  "name": "Using fixtures to represent data",
-  "email": "hello@cypress.io",
-  "body": "Fixtures are a great way to mock data for responses to routes"
+  "subscribeURL": "https://account.forbes.com/subscribe?eventSource=header&redirect=https://www.forbes.com/home_asia/",
+  "mostRecentURL": "https://www.forbes.com/search/?sort=recent&q=Bangladesh&sh=69f1dfbf279f"
 }

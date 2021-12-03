@@ -10,8 +10,8 @@ describe('User visit diffrent pages on forbes.com', () => {
         return false
     })
 
-    it('UI Test 1 - User visit "Home Page"', () => {
+    it('UI Test 3 - User click "Sign in button" and Login with email and password', () => {
         homePage.homepage();
-        cy.title().should('eq', 'Forbes');
+        homePage.signIn().click();
     });
 });
