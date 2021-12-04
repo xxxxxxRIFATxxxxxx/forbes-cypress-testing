@@ -22,6 +22,14 @@ class billionairesPageLinks {
     searchInput() {
         return cy.get('body > div.main-content.main-content--overflow-visible.main-content--universal-header > main > div.search-content-wrapper > div.search-content.main-content__left-col > div.search-box > input');
     }
+
+    elonMusk() {
+        return cy.get('#elon-musk > div.personName');
+    }
+
+    elonMuskProfile() {
+        return cy.get('#gatsby-focus-wrapper > div > div > div.table-block > div.table-block-wrapper > div.table > div.table-body > div:nth-child(1) > div.expanded-content > div.person-bio > div.bio-container > div.bio-button-container > a');
+    }
 }
 
 export default billionairesPageLinks
