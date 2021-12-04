@@ -12,6 +12,6 @@ describe('User visit diffrent pages on forbes.com', () => {
 
     it('UI Test 3 - User click "Sign in button" and Login with email and password', () => {
         homePage.homepage();
-        homePage.signIn().click();
+        homePage.signIn().click({ force: true });
     });
 });

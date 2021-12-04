@@ -54,6 +54,18 @@ class homePageLinks {
    forbesBillionairesPortfolio() {
       return cy.get('body > div.main-content.main-content--universal-header > footer > div.footer--desktop.fs-content > div.footer__content > div:nth-child(1) > div:nth-child(4) > a:nth-child(1)');
    }
+
+   advertise() {
+      return cy.get('body > div.main-content.main-content--universal-header > footer > div.footer--desktop.fs-content > div.footer__content > div:nth-child(2) > div:nth-child(4) > a:nth-child(1)');
+   }
+
+   forbesIsrael() {
+      return cy.get('body > div.main-content.main-content--universal-header > footer > div.footer--desktop.fs-content > div.footer__content > div.footer__column--right > div.footer__bottomright-promo > div > div:nth-child(2) > a:nth-child(1)');
+   }
+
+   forbesJapan() {
+      return cy.get('body > div.main-content.main-content--universal-header > footer > div.footer--desktop.fs-content > div.footer__content > div.footer__column--right > div.footer__bottomright-promo > div > div:nth-child(2) > a:nth-child(3)');
+   }
 }
 
 export default homePageLinks

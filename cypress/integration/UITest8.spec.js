@@ -18,7 +18,21 @@ describe('User visit diffrent pages on forbes.com', () => {
         billionairesPortfolioPage.edition().click({ force: true });
         billionairesPortfolioPage.us().click({ force: true });
         billionairesPortfolioPage.intelSaysPost().click({ force: true });
-        cy.title().should('eq', 'U.S. Intel Says Russia Is Preparing 175,000 Troops For Ukraine Offensive');
+    });
 
+    it('UI Test 8.1.2 - User visit Home page and click "Forbes Billionaires Portfolio" and then click Edition and click Asia and click any post', () => {
+        homePage.homepage();
+        homePage.forbesBillionairesPortfolio().click();
+        billionairesPortfolioPage.edition().click({ force: true });
+        billionairesPortfolioPage.asia().click({ force: true });
+        billionairesPortfolioPage.acVenturesPost().click({ force: true });
+    });
+
+    it('UI Test 8.1.3 - User visit Home page and click "Forbes Billionaires Portfolio" and then click Edition and click Europe and click any post', () => {
+        homePage.homepage();
+        homePage.forbesBillionairesPortfolio().click();
+        billionairesPortfolioPage.edition().click({ force: true });
+        billionairesPortfolioPage.europe().click({ force: true });
+        billionairesPortfolioPage.hallOfFramePost().click({ force: true });
     });
 });
